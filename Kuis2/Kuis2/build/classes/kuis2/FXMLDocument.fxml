@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1238.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kuis2.FXMLDocumentController">
+   <children>
+      <Label fx:id="tanggal" layoutX="39.0" layoutY="235.0" prefHeight="32.0" prefWidth="129.0" text="Tanggal Beli ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="561.0" layoutY="55.0" text="Scanner ">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="tanngal" layoutX="168.0" layoutY="236.0" />
+      <Label layoutX="82.0" layoutY="130.0" prefHeight="21.0" prefWidth="74.0" text="ID">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="172.0" layoutY="130.0" />
+      <Label fx:id="harga" layoutX="59.0" layoutY="183.0" prefHeight="32.0" prefWidth="84.0" text="Scanner">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="scanner" layoutX="168.0" layoutY="190.0" />
+      <Label layoutX="64.0" layoutY="360.0" prefHeight="21.0" prefWidth="74.0" text="Harga">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="warna" layoutX="162.0" layoutY="302.0" prefWidth="187.0" />
+      <Label layoutX="64.0" layoutY="302.0" prefHeight="21.0" prefWidth="74.0" text="Warna">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="harga1" layoutX="162.0" layoutY="360.0" />
+      <Button fx:id="btnsimpan" layoutX="82.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="74.0" text="Simpan " />
+      <TableView fx:id="tabelview" layoutX="545.0" layoutY="121.0" prefHeight="424.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="no" prefWidth="75.0" text="No." />
+          <TableColumn fx:id="scannerview" prefWidth="169.0" text="Scanner" />
+            <TableColumn fx:id="hargaview" prefWidth="104.0" text="Harga" />
+            <TableColumn fx:id="warnaview" prefWidth="94.0" text="Warna" />
+            <TableColumn fx:id="tanggalview" prefWidth="133.0" text="Tanggal" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnedit" layoutX="172.0" layoutY="457.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" text="edit" />
+      <Button fx:id="btnhapus" layoutX="256.0" layoutY="457.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" text="Hapus" />
+   </children>
+</AnchorPane>
